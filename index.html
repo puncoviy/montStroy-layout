@@ -37,25 +37,40 @@
                 <a class="header__logo" href="">
                     <img class="header__logo-img" src="./img/logo.png" alt="logotype">
                 </a>
-                <ul class="header__menu-list">
-                    <li class="header__menu-item">
-                        <a class="header__menu-item-link" href="#">Главная</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-item-link" href="#">Услуги</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-item-link" href="#">Проекты</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-item-link" href="#">Партнеры</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-item-link" href="#">Контакты</a>
-                    </li>
-                </ul>
+                <div class="burger-box"><div class="burger-menu"></div></div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-item-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-item-link" href="#">Услуги</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-item-link" href="#">Проекты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-item-link" href="#">Партнеры</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-item-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <a class="header-icon-box" href="tel:+74954526723">
+                    <svg class="header-icon">
+                        <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                    </svg>
+                </a>
                 <a class="header__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
-                <a class="header__btn btn" href="">Обратная связь</a>
+
+                <a class="header-icon-box" href="#footer">
+                    <svg class="header-icon">
+                        <use xlink:href="./img/svg/sprite.svg#message"></use>
+                    </svg>
+                </a>
+                <a class="header__btn btn" href="#footer">Обратная связь</a>
             </div>
         </div>
     </header>
@@ -378,7 +393,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10837.782372211213!2d39.70579667359226!3d47.22742924982972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b91238bea069%3A0x47ec578c8ef06654!2z0JfQkNCeICLQrtC20YLQtdGF0LzQvtC90YLQsNC2Ig!5e0!3m2!1sru!2sru!4v1658749833031!5m2!1sru!2sru" width="100%" height="810" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">
@@ -442,6 +457,7 @@
             <p class="footer__copyright">1992-2022 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
         </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
