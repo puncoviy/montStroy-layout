@@ -224,6 +224,7 @@ body {
     padding: 160px 0 80px;
     color: #fff;
     background: no-repeat url(../img/promo-bg.jpg) center center / cover;
+    background-color: #0b0b0d;
     margin-bottom: 125px;
 }
 
@@ -256,6 +257,7 @@ body {
     font-size: 20px;
     font-weight: 900;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #00ffd8;
     margin-right: 21px;
     margin-bottom: 125px;
@@ -783,6 +785,17 @@ body {
     text-align: center;
 }
 
+@media (max-width: 1200px) {
+    .promo {
+        background-position: 80%;
+    }
+    .promo__text {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
 @media (max-width: 925px) {
     .header-icon-box {
         display: flex;
@@ -792,6 +805,32 @@ body {
     }
     .header__btn {
         display: none;
+    }
+    .promo__title {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        text-align: center;
+        padding: 60px 0 80px;
+    }
+    .promo__text {
+        text-align: left;
+        font-size: 21px;
+        line-height: 27px;
+    }
+    .promo__btn {
+        margin-bottom: 40px;
+    }
+    .promo__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: unset;
+    }
+    .promo__item:nth-child(3) .promo__item-img {
+        margin-top: 14px;
     }
 }
 
@@ -815,6 +854,15 @@ body {
     .burger-box {
         display: block;
     }
+    .promo__btn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .promo__title {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -828,5 +876,29 @@ body {
         flex-direction: column;
         border-radius: 10px;
         top: 70px;
+    }
+    .promo__list {
+        gap: 15px;
+    }
+    .promo__item-img {
+        position: relative;
+        z-index: 1;
+    }
+    .promo__item-text {
+        position: relative;
+    }
+
+    .promo__item-text::before {
+        position: absolute;
+        z-index: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        filter: blur(20px);
+        content: '';
+        background-color: #0b0b0d;
+        top: -111px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
