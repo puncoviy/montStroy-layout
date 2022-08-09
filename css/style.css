@@ -794,6 +794,36 @@ body {
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.3);
     }
+    .projects__item:nth-child(n) {
+        flex-basis: calc(50% - 3px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        max-height: unset;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .footer__info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+    }
+    .footer__form {
+        order: 1;
+        margin-top: 0;
+    }
+    .footer__contacts-list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 100%;
+        margin-left: 40px;
+    }
 }
 
 @media (max-width: 925px) {
@@ -832,6 +862,12 @@ body {
     .promo__item:nth-child(3) .promo__item-img {
         margin-top: 14px;
     }
+    .projects__list {
+        justify-content: center;
+    }
+    .projects__item:nth-child(n) {
+        flex-basis: 570px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -856,6 +892,27 @@ body {
     }
     .promo__btn {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 568px) {
+    .footer__form {
+        order: unset;
+    }
+    .footer__form-name,
+    .footer__form-tel {
+        width: 100%;
+    }
+    .footer__info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer__contacts-list {
+        margin-left: 30px;
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 }
 
@@ -887,7 +944,6 @@ body {
     .promo__item-text {
         position: relative;
     }
-
     .promo__item-text::before {
         position: absolute;
         z-index: 0;
@@ -900,5 +956,17 @@ body {
         top: -111px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .projects__item:nth-child(5) {
+        max-height: 89px;
+    }
+    .footer__title {
+        font-size: 20px;
+    }
+    .footer__form {
+        padding: 30px;
+    }
+    .footer__form-agreement {
+        margin-bottom: 10px;
     }
 }

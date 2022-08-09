@@ -8,7 +8,27 @@ $(function(){
         slidesToScroll: 1,
         nextArrow: '<button type="button" class="slick-next"></button>',
         prevArrow: '<button type="button" class="slick-prev"></button>',
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1124,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
 
